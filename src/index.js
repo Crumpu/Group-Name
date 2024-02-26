@@ -16,7 +16,7 @@ const arrGroups = [
   const correct = [];
   const incorrect = [];
 arrGroups.forEach((item) => {
-  let reg = /^(FE|FD|FM|fe|fd|fm)(20\d{2})(-\d{0,2})?$/;
+  let reg = /^(FE|FD|FM|fe|fd|fm)(20\d{2})(-(\d*))?$/;
     if (reg.test(item)) {
       console.log(`Success ${item}`);
       correct.push(`Success ${item}`);
